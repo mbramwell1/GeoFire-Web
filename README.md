@@ -35,11 +35,11 @@ geoFire.query()
       .build()
       .get()
       .then(function(doc) {
-          if (doc.exists) {
-              Log.i("DB", "Got Documents.");
-          } else {
-              Log.w("DB", "Error getting documents.", task.getException());
-          }
+        if (doc.exists) {
+          console.log("Document data:", doc.data());
+        } else {
+          console.log("No such document!");
+        }
       }).catch(function(error) {
           console.log("Error getting document: ", error);
       });
