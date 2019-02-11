@@ -15,16 +15,16 @@ class BoundingBoxUtils {
 
   getBoundingBox(queryLocation, distance) {
     if (distance < 0) {
-      throw new IllegalArgumentException();
+      throw 500;
     }
 
     let distanceInRadians;
     switch (this.distanceUnit){
       case DistanceUnit().MILES:
-        distanceInRadians = distance / EARTH_RADIUS_MILES;
+        distanceInRadians = distance / this.EARTH_RADIUS_MILES;
         break;
       case DistanceUnit().KILOMETERS:
-        distanceInRadians = distance / EARTH_RADIUS_KM;
+        distanceInRadians = distance / this.EARTH_RADIUS_KM;
         break;
       default:
         throw 500;
@@ -37,7 +37,7 @@ class BoundingBoxUtils {
 
     if (minimumLatitude > this.MINIMUM_LATITUDE && maximumLatitude < this.MAXIMUM_LATITUDE) {
 
-      deltaLongitude = Math.asin(Math.sin(distanceInRadians) / Math.cos(queryLocation.getLatitude()));
+      let deltaLongitude = Math.asin(Math.sin(distanceInRadians) / Math.cos(queryLocation.getLatitude()));
 
       minimumLongitude = queryLocation.getLongitude() - deltaLongitude;
       if (minimumLongitude < this.MINIMUM_LONGITUDE) {

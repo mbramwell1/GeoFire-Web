@@ -11,26 +11,26 @@ class BoundingBox {
   }
 
   getMinimumLatitude() {
-    return minimumLatitude;
+    return this.minimumLatitude;
   }
 
   getMinimumLongitude() {
-    return minimumLongitude;
+    return this.minimumLongitude;
   }
 
   getMaximumLatitude() {
-    return maximumLatitude;
+    return this.maximumLatitude;
   }
 
   getMaximumLongitude() {
-    return maximumLongitude;
+    return this.maximumLongitude;
   }
 
   getMinimumMatch(){
-    return minimumMatch;
+    return this.minimumMatch;
   }
 
   getMaximumMatch(){
-    return maximumMatch;
+    return this.maximumMatch;
   }
 }
