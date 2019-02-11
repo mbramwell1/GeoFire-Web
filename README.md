@@ -5,7 +5,7 @@ _GeoFire-Web_ adds location based searching capability to the popular Google Fir
 
 In its current state, this is very much an experimental library.
 
-##Usage
+## Usage
 You'll need to set up GeoFire to use your collection:
 
 ```
