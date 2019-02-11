@@ -1,0 +1,34 @@
+{
+  "name": "geofire-web",
+  "version": "0.0.1",
+  "description": "Query Firestore documents using GeoLocation coordinates.",
+  "main": "geofire.js",
+  "scripts": {
+    "test": "karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbramwell1/GeoFire-Web.git"
+  },
+  "keywords": [
+    "firebase",
+    "firestore",
+    "google",
+    "geo",
+    "location",
+    "geo-location",
+    "geofire",
+    "geofire-web",
+    "geofirestore",
+    "geofirestore-web"
+  ],
+  "author": "Martin Bramwell",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/mbramwell1/GeoFire-Web/issues"
+  },
+  "homepage": "https://github.com/mbramwell1/GeoFire-Web#readme",
+  "dependencies": {
+    "firebase": "^5.8.0"
+  }
+}
